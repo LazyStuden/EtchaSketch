@@ -1,0 +1,29 @@
+body,
+.top
+{
+    display: flex;
+    flex-direction: column;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.top{
+    align-items: center;
+}
+.container{
+    display: grid;
+    margin-inline: auto;
+    width: 960px;
+    height: 960px;
+    grid-template-columns: repeat(8, 80px);
+    grid-template-rows: repeat(8, 80px);
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-content: center;
+}
+.box{
+    background-color: yellow;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5px;
+}
