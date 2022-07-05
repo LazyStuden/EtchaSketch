@@ -10,20 +10,47 @@ body{
 .top{
     align-items: center;
 }
+.buttons{
+    display: flex;
+}
+.buttons > button{
+    margin: 5px;
+    padding: 3px;
+    text-align: center;
+    cursor: pointer;
+    flex: 1 1 auto;
+}
 .container{
-    display: grid;
+    display: inline-grid;
     margin-inline: auto;
+    grid-gap: 0px;
+    border: 3px solid black;
+    border-radius: 2px;
+    box-shadow: 0 0 20px #3922;
     width: 960px;
     height: 960px;
-    grid-template-columns: repeat(8, 80px);
-    grid-template-rows: repeat(8, 80px);
-    column-gap: 5px;
-    row-gap: 5px;
-    justify-content: center;
 }
 .box{
     background-color: yellow;
-    border-style: solid;
-    border-color: black;
-    border-width: 0.5px;
+}
+.grid-10x10{
+    grid-template-columns: repeat(10, auto);
+}
+.grid-10x10 > div{
+    height: 96px;
+    width: 96px;
+}
+.grid-20x20{
+    grid-template-columns: repeat(20, auto);
+}
+.grid-20x20 > div{
+    height: 48px;
+    width: 48px;
+}
+.grid-30x30{
+    grid-template-columns: repeat(30, auto);
+}
+.grid-30x30 > div{
+    height: 32px;
+    width: 32x;
 }
