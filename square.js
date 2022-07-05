@@ -22,7 +22,6 @@ function checkButtons(){
             generateGrid(10*10, 'grid-10x10');
         }
         else if(button.classList.contains('grid20')){
-            console.log('second button clicked')
             generateGrid(20*20, 'grid-20x20');
         }
         else if(button.classList.contains('grid30')){
@@ -33,7 +32,7 @@ function checkButtons(){
 
 function randomColor(){
     let rand = Math.floor(Math.random()*5);
-    console.log(rand);
+
     const color = {
         0: "#03045e",
         1: "#0077b6",
